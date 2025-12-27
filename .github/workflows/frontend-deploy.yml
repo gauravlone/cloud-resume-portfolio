@@ -1,0 +1,29 @@
+name: Frontend Deploy to S3
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "frontend/**"
+
+permissions:
+  id-token: write      # needed for OIDC
+  contents: read       # read repo contents
+
+jobs:
+  deploy-frontend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Sync frontend to S3
+        run: |
+          aws s3 sync frontend/ s3://${{ secrets.S3_BUCKET }}/ --delete
