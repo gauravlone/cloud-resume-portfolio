@@ -1,13 +1,17 @@
 :root {
-  --bg: #050816;
+  --bg: #020617;
   --bg-alt: #0b1120;
-  --accent: #f97316;
-  --accent-soft: rgba(249, 115, 22, 0.15);
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --card: #020617;
+
+  --card: #0f172a;
   --border: #1f2937;
-  --radius: 14px;
+
+  --text: #f8fafc;
+  --muted: #9ca3af;
+
+  --accent: #fb923c;
+  --accent-soft: rgba(251, 146, 60, 0.15);
+
+  --radius: 16px;
 }
 
 *,
@@ -353,4 +357,57 @@ main {
   .navbar nav {
     display: none; /* keep header minimal on very small screens */
   }
+}
+/* ================================
+   Hero Load Animation (Professional)
+   ================================ */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Initial hidden state */
+.hero-text > *,
+.hero-card {
+  opacity: 0;
+}
+
+/* Text animation */
+.hero-text .tagline {
+  animation: fadeUp 0.7s ease-out 0.1s forwards;
+}
+
+.hero-text h1 {
+  animation: fadeUp 0.7s ease-out 0.2s forwards;
+}
+
+.hero-text .subtitle {
+  animation: fadeUp 0.7s ease-out 0.35s forwards;
+}
+
+.hero-actions {
+  animation: fadeUp 0.7s ease-out 0.5s forwards;
+}
+
+/* Card animation */
+.hero-card {
+  animation: fadeInRight 0.8s ease-out 0.35s forwards;
 }
