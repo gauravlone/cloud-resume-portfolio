@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gaurav Lone | Cloud & DevOps Engineer</title>
+  <title>Gaurav Lone | Software Engineer (Cloud/DevOps)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -24,30 +24,32 @@
     <!-- Hero -->
     <section class="hero" id="top">
       <div class="hero-text">
-        <p class="tagline">Software Engineer → Cloud & DevOps</p>
+        <p class="tagline">Software Engineer (Cloud/DevOps Projects)</p>
         <h1>Hi, I'm <span class="accent">Gaurav Lone</span></h1>
         <p class="subtitle">
-          Software Engineer transitioning to DevOps, building hands‑on skills in AWS, containers,
-          and CI/CD to automate reliable deployments.
+          Software Engineer with 2+ years Java development at Montran Corporation (banking payment systems) 
+          transitioning to Cloud & DevOps. Deployed AWS S3 portfolio (GitHub Actions CI/CD + OIDC IAM). 
+          Hands-on EC2, ALB, VPC, Docker through projects + practice.
         </p>
         <div class="hero-actions">
-          <a class="btn primary" href="resume/GauravLoneResume.pdf" target="_blank" rel="noopener">
+          <a class="btn primary" href="GauravLoneResume.pdf" target="_blank" rel="noopener">
             Download Resume
           </a>
           <a class="btn ghost" href="#projects">View Projects</a>
         </div>
         <p class="meta">
-          Based in Nashik · Open to Cloud / DevOps Engineer roles
+          Vihitgaon, Nashik Road, Maharashtra · Open to Junior DevOps/Cloud roles
         </p>
       </div>
       <div class="hero-card">
         <div class="hero-avatar"></div>
         <div class="hero-card-body">
-          <h2>Current Focus</h2>
+          <h2>Hands-on Skills</h2>
           <ul>
-            <li>AWS (S3, IAM, EC2, ALB, Auto Scaling)</li>
-            <li>GitLab & GitHub Actions CI/CD</li>
-            <li>Docker & containerized apps</li>
+            <li>AWS S3 + IAM OIDC (CI/CD)</li>
+            <li>GitHub Actions, GitLab CI/CD</li>
+            <li>Docker + Container Registry</li>
+            <li>EC2, ALB, VPC, Security Groups</li>
           </ul>
         </div>
       </div>
@@ -57,13 +59,9 @@
     <section id="about" class="section">
       <h2>About</h2>
       <p>
-        Assistant Software Engineer with 2+ years of experience building and supporting payment
-        processing systems for leading Indian banks. Now focusing on Cloud and DevOps to combine
-        strong Java backend experience with AWS, containers, and automation.
-      </p>
-      <p>
-        Previously worked on PFMS, NEFT, NACH and APBS payment systems at Montran Corporation,
-        delivering features, deployments and production support in high‑availability environments.
+        Software Engineer with 2+ years production Java experience at Montran Corporation building banking 
+        payment systems (PFMS, NEFT, NACH, APBS) for Kotak Bank, Bank of India, ICICI Bank. Transitioning 
+        to Cloud & DevOps with hands-on AWS, Docker, and CI/CD projects.
       </p>
     </section>
 
@@ -74,33 +72,33 @@
         <div class="skill-card">
           <h3>AWS & Cloud</h3>
           <ul>
-            <li>S3 static website hosting & IAM policies</li>
-            <li>EC2, Application Load Balancer, Auto Scaling</li>
-            <li>Designing basic VPC and security groups</li>
+            <li>S3 Static Hosting + IAM OIDC</li>
+            <li>EC2</li>
+            <li>ALB, Security Groups, VPC</li>
           </ul>
         </div>
         <div class="skill-card">
-          <h3>DevOps & CI/CD</h3>
+          <h3>CI/CD & DevOps</h3>
           <ul>
-            <li>GitLab & GitHub for source control</li>
-            <li>GitLab CI/CD pipelines</li>
-            <li>GitHub Actions → S3 deployments via OIDC</li>
+            <li>GitHub Actions CICD → S3 (OIDC)</li>
+            <li>GitLab CI/CD Pipelines</li>
+            <li>Docker + GitLab Container Registry</li>
           </ul>
         </div>
         <div class="skill-card">
-          <h3>Programming</h3>
+          <h3>Backend</h3>
           <ul>
-            <li>Java (Struts, Spring Boot)</li>
-            <li>Python (Flask, scripting)</li>
+            <li>Java 1.8+ (Struts, Spring Boot)</li>
+            <li>Python (Flask, Odoo)</li>
             <li>SQL, JSP, HTML, XML</li>
           </ul>
         </div>
         <div class="skill-card">
-          <h3>Platforms & Tools</h3>
+          <h3>Enterprise Tools</h3>
           <ul>
-            <li>Docker & container registries</li>
             <li>IBM WebSphere, IBM MQ</li>
-            <li>Linux basics, Git, Jira‑style workflows</li>
+            <li>GitLab/GitHub (branching)</li>
+            <li>Production deployments</li>
           </ul>
         </div>
       </div>
@@ -111,41 +109,43 @@
       <h2>Projects</h2>
       <div class="projects-grid">
         <article class="project-card">
-          <h3>Cloud Resume Portfolio on AWS</h3>
-          <p>
-            Personal portfolio hosted on Amazon S3 with GitHub Actions CI/CD.
-            Uses IAM OIDC roles for secure deployments without access keys.
-          </p>
+          <h3>Cloud Resume Portfolio (Personal Project)</h3>
+          <p>AWS S3 portfolio deployed via GitHub Actions CI/CD pipeline using OIDC IAM role.</p>
           <ul>
-            <li>Configured S3 static website hosting and bucket policies.</li>
-            <li>Built GitHub Actions workflow to sync frontend to S3 on each push.</li>
-            <li>Designed IAM role with least‑privilege S3 permissions.</li>
+            <li>S3 static website hosting + bucket policies</li>
+            <li>GitHub Actions workflow (no access keys stored)</li>
+            <li>Automated sync on main branch push</li>
+            <li><strong>Live:</strong> This website! GitHub: github.com/gauravlone254/cloud-resume</li>
           </ul>
         </article>
 
         <article class="project-card">
-          <h3>CI/CD for Dockerized Python API</h3>
-          <p>
-            GitLab‑based pipeline for a Flask API exposing a /health endpoint,
-            with automated Docker builds and pushes to GitLab Container Registry.
-          </p>
+          <h3>Dockerized Python API CI/CD (Personal Project)</h3>
+          <p>GitLab CI/CD pipeline for Flask API with container registry integration.</p>
           <ul>
-            <li>Two‑stage pipeline (build, test) triggered on main branch.</li>
-            <li>Images tagged with commit SHA and latest, pushed to registry.</li>
-            <li>Improved consistency between local and CI environments.</li>
+            <li>Two-stage pipeline (build, test) on main branch</li>
+            <li>Docker images tagged with commit SHA + latest</li>
+            <li>GitLab Container Registry integration</li>
           </ul>
         </article>
 
         <article class="project-card">
-          <h3>Banking Payment Systems (PFMS, NEFT, NACH, APBS)</h3>
-          <p>
-            Worked as part of Montran's Java team building payment processing systems
-            for Kotak, Bank of India and ICICI Bank.
-          </p>
+          <h3>PFMS Payment System (Montran Corp)</h3>
+          <p>Transaction system for Kotak Bank, Bank of India, ICICI Bank (real-time fund utilization).</p>
           <ul>
-            <li>Developed features, fixed defects, and supported UAT & production.</li>
-            <li>Deployed WARs on IBM WebSphere and troubleshot IBM MQ messaging.</li>
-            <li>Coordinated with clients on verification and release notes.</li>
+            <li>Java backend development + WebSphere deployments</li>
+            <li>IBM MQ messaging troubleshooting</li>
+            <li>UAT/production support + client coordination</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <h3>NEFT/NACH/APBS Payment Systems (Montran Corp)</h3>
+          <p>Real-time settlement systems for Kotak Bank and Bank of India.</p>
+          <ul>
+            <li>Java/Struts feature development</li>
+            <li>WAR builds + production deployments</li>
+            <li>Release documentation + client verification</li>
           </ul>
         </article>
       </div>
@@ -156,11 +156,11 @@
       <h2>Experience</h2>
       <div class="experience-item">
         <h3>Assistant Software Engineer – Montran Corporation India</h3>
-        <p class="experience-meta">Jul 2022 – Aug 2024 · Navi Mumbai</p>
+        <p class="experience-meta">Jul 2022 – Aug 2024 · Ghansoli, Navi Mumbai</p>
         <ul>
-          <li>Developed and maintained Java backend for payment processing systems (PFMS, NEFT, NACH, APBS).</li>
-          <li>Handled requirement gathering, development, unit testing, deployments and production support.</li>
-          <li>Used GitLab for branching, code review and release management.</li>
+          <li>Java development for payment systems (PFMS, NEFT, NACH, APBS)</li>
+          <li>GitLab version control, WebSphere deployments, IBM MQ</li>
+          <li>Full lifecycle: requirements → UAT → production support</li>
         </ul>
       </div>
 
@@ -168,7 +168,7 @@
         <h3>Python Developer Trainee – Nutshell Infosoft</h3>
         <p class="experience-meta">Jan 2022 – Jul 2022 · Nashik</p>
         <ul>
-          <li>Developed a medical portal on Odoo for patient management and billing.</li>
+          <li>Odoo medical portal (patient management, billing)</li>
         </ul>
       </div>
     </section>
@@ -176,31 +176,22 @@
     <!-- Contact -->
     <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>
-        Interested in cloud / DevOps roles or collaborations. Feel free to reach out.
-      </p>
+      <p>Targeting Junior DevOps/Cloud Engineer roles in Nashik, Mumbai, or Remote.</p>
       <div class="contact-grid">
         <div>
           <p><strong>Email:</strong> <a href="mailto:gauravlone254@gmail.com">gauravlone254@gmail.com</a></p>
           <p><strong>Phone:</strong> 93079 74568</p>
-          <p><strong>Location:</strong> Nashik, Maharashtra, India</p>
-          <p><strong>LinkedIn:</strong>
-            <a href="https://linkedin.com/in/gaurav-lone-a06860184" target="_blank" rel="noopener">
-              linkedin.com/in/gaurav-lone-a06860184
-            </a>
-          </p>
-          <p><strong>GitLab Projects:</strong>
-            <a href="https://gitlab.com/users/gauravlone254/projects" target="_blank" rel="noopener">
-              gitlab.com/gauravlone254
-            </a>
-          </p>
+          <p><strong>Location:</strong> Vihitgain, Nashik Road, Maharashtra</p>
+          <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gaurav-lone-a06860184" target="_blank" rel="noopener">linkedin.com/in/gaurav-lone-a06860184</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/gauravlone254/cloud-resume" target="_blank" rel="noopener">github.com/gauravlone254/cloud-resume</a></p>
+          <p><strong>GitLab:</strong> <a href="https://gitlab.com/users/gauravlone254/projects" target="_blank" rel="noopener">gitlab.com/gauravlone254</a></p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Gaurav Lone · Built on AWS S3 with GitHub Actions CI/CD</p>
+    <p>© <span id="year"></span> Gaurav Lone · AWS S3 + GitHub Actions CI/CD (OIDC IAM)</p>
   </footer>
 
   <script src="script.js"></script>
